@@ -6,7 +6,7 @@
     <br />
     <div id="menu-botoes">
         <div id="left-column">
-            <a href="Facebook.aspx"><img src="images/facebook.png"/></a>
+            <a href="javascript:checkLoginState();"><img src="images/facebook.png"/></a>
             <a href="#"><img src="images/twitter.png"/></a>
         </div>
         <div id="right-column">
