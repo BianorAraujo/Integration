@@ -8,13 +8,6 @@
             });
 
         })(jQuery);
-        //$(document).ready(function () {
-        //    FBLoaded
-
-        //    loadFb();
-        //    console.log('teste');
-            
-        //});
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -23,8 +16,8 @@
     <br />
     <div id="status"></div>
     <br />
+    <span id="id"></span>
     <br />
-    Friends
-    <br />
-    <asp:Label ID="label1" runat="server"></asp:Label>
+    <span id="name"></span>
+    
 </asp:Content>

@@ -6,21 +6,8 @@
 <head runat="server">
     <title>Home Master</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="scripts/Facebook.js" type="text/javascript"></script>
-    <link href="style/Site.css" type="text/css" rel="stylesheet"/>
-    <%--<script>
-        $(document).ready(function () {
-            $.ajaxSetup({ cache: true });
-            $.getScript('//connect.facebook.net/en_US/sdk.js', function () {
-                FB.init({
-                    appId: '295259497171655',
-                    version: 'v2.5' // or v2.0, v2.1, v2.2, v2.3
-                });
-                $('#loginbutton,#feedbutton').removeAttr('disabled');
-                FB.getLoginStatus(updateStatusCallback);
-            });
-        });
-    </script>--%>
+    <script src="/scripts/Facebook.js?v=2" type="text/javascript"></script>
+    <link href="/style/Site.css" type="text/css" rel="stylesheet"/>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>

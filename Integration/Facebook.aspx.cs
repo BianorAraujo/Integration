@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Script.Serialization;
 using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -15,17 +16,19 @@ namespace Integration
 
         }
 
-        [WebMethod(true)]
-        public static int GetProfile(int id)
+        [WebMethod]
+        public static User GetProfile(string profile)
         {
-            return id;
-            //label1.Text = jsonData;
+            JavaScriptSerializer ser = new JavaScriptSerializer();
+            User user = ser.Deserialize<User>(profile);
+
+            return user;
         }
     }
 
     public class User
     {
-        public string name { get; set; }
-        public string id { get; set; }
+        public string name;
+        public string id;
     }
 }
