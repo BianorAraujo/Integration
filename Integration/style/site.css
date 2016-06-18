@@ -1,6 +1,5 @@
 ﻿body {
-    background-color:#817f7f;
-    color:white;
+    
 }
 
 h2{
@@ -44,3 +43,36 @@ h3{
     margin-top:20px;
     margin-right:30px;
 }
+
+/*Facebook*/
+#facebookMain{
+    color:#365899;
+    font-family:'lucida grande',tahoma,verdana,arial,sans-serif;
+    font-weight:bold;
+}
+
+#fb-title{
+    background-color:#365899;
+    height:50px;
+}
+
+#fb-link{
+    margin-top:10px;
+}
+
+#fb-title a{
+    margin-left:15px;
+    text-decoration:none;
+    color:white;
+    font-size:13px;
+}
+
+#fb-icon{
+    width:40px;
+    height:40px;
+    margin-left:50px;
+    margin-right:20px;
+    vertical-align:middle;
+    margin-top:5px;
+}
+

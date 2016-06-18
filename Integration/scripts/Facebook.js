@@ -64,7 +64,7 @@ function checkLoginState() {
 function getProfileFb() {
     FB.getLoginStatus(function (response) {
         if (response.status === 'connected') {
-            FB.api('/me', 'GET', {}, function (profile) {
+            FB.api('/me?fields=id,name,picture,cover', 'GET', {}, function (profile) {
                 if (profile && !profile.error) {
                     //$.ajax({
                     //    type: "POST",
@@ -82,9 +82,10 @@ function getProfileFb() {
                     //    console.log('erro');
                     //}
 
+                    document.getElementById('user-cover').src = profile.cover.source;
                     document.getElementById('id').innerText = profile.id;
                     document.getElementById('name').innerText = profile.name;
-
+                    console.log(JSON.stringify(profile));
                 }
                 else {
                     console.log(profile.error);

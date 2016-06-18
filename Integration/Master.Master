@@ -20,7 +20,7 @@
     <form id="form1" runat="server">
         <h2>Integration</h2>
         <br />
-        <span id="line-master">___________________________________________________________________________________________________________________</span>
+        <span id="line-master"></span>
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>

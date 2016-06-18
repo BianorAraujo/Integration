@@ -11,13 +11,22 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h3>Facebook</h3>
-    <br />
-    <br />
-    <div id="status"></div>
-    <br />
-    <span id="id"></span>
-    <br />
-    <span id="name"></span>
-    
+    <div id="facebookMain">
+        <div id="fb-title">
+            <img id="fb-icon" src="images/facebook_icon.png"/>
+            <%--<div id="fb-link">--%>
+            <a href="#">Perfil</a>
+            <a href="#">Amigos</a>
+            <a href="#">Albúns</a>
+            <%--</div>--%>
+        </div>
+        <br />
+        <div id="fb-cover">
+            <img id="user-cover" src="#" height=""/>
+        </div>
+        <br />
+        <span id="id"></span>
+        <br />
+        <span id="name"></span>
+    </div>
 </asp:Content>

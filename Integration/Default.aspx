@@ -6,11 +6,13 @@
     <br />
     <div id="menu-botoes">
         <div id="left-column">
+            <%--<asp:ImageButton ImageUrl="images/facebook.png" OnClientClick="javascript:checkLoginState();" runat="server" />--%>
             <a href="javascript:checkLoginState();"><img src="images/facebook.png"/></a>
             <a href="#"><img src="images/twitter.png"/></a>
         </div>
         <div id="right-column">
-            <a href="#"><img src="images/instagram.png"/></a>
+            <asp:ImageButton ImageUrl="images/instagram.png" OnClick="InstagramAutenctication_Click" runat="server" />
+            <%--<a href="Instagram.aspx"><img src="images/instagram.png"/></a>--%>
             <a href="#"><img src="images/linkedin.png"/></a>
         </div>        
     </div>
