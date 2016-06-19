@@ -39,6 +39,11 @@ h3{
     position:relative;
 }
 
+.right-column{
+    margin-top:20px;
+    margin-right:30px;
+}
+
 #right-column img{
     margin-top:20px;
     margin-right:30px;
@@ -47,17 +52,14 @@ h3{
 /*Facebook*/
 #facebookMain{
     color:#365899;
-    font-family:'lucida grande',tahoma,verdana,arial,sans-serif;
+    background-color:#e9ebee;
+    font-family:sans-serif;
     font-weight:bold;
 }
 
 #fb-title{
     background-color:#365899;
-    height:50px;
-}
-
-#fb-link{
-    margin-top:10px;
+    height:45px;
 }
 
 #fb-title a{
@@ -73,6 +75,42 @@ h3{
     margin-left:50px;
     margin-right:20px;
     vertical-align:middle;
-    margin-top:5px;
+    margin-top:3px;
 }
+
+#fb-cover{
+    height:300px;
+    overflow:hidden;
+    margin-left:100px;
+}
+
+#user-cover{
+    margin-top:-40px;
+}
+
+#fb-picture{
+    border:10px;
+}
+
+#user-picture{
+    height:165px;
+    width:165px;
+    position:absolute;
+    margin-top:-135px;
+    margin-left:120px;
+    
+    padding:4px;
+    border:1px solid #a39e9e;
+    background-color:white;
+}
+
+#user-name{
+    position:absolute;
+    margin-top:-40px;
+    margin-left:310px;
+    color:white;
+    font-size:25px;
+    text-shadow: 0 0 3px rgba(0,0,0,.8);
+}
+
 

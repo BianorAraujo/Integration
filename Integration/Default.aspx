@@ -11,7 +11,7 @@
             <a href="#"><img src="images/twitter.png"/></a>
         </div>
         <div id="right-column">
-            <asp:ImageButton ImageUrl="images/instagram.png" OnClick="InstagramAutenctication_Click" runat="server" />
+            <asp:ImageButton CssClass="right-column" ImageUrl="images/instagram.png" OnClick="InstagramAutenctication_Click" runat="server" />
             <%--<a href="Instagram.aspx"><img src="images/instagram.png"/></a>--%>
             <a href="#"><img src="images/linkedin.png"/></a>
         </div>        

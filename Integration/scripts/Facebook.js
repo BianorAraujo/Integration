@@ -1,32 +1,5 @@
 ﻿
 
-// Here we run a very simple test of the Graph API after login is
-// successful.  See statusChangeCallback() for when this call is made.
-//function testAPI() {
-
-//    FB.api('/me', function (response) {
-//        if (response && !response.error) {
-//            console.log(JSON.stringify(response));
-//            document.getElementById('status').innerHTML =
-//              'Thanks for logging in, ' + response.name + '!';
-//        }
-//    });
-
-//    FB.api('/me/permissions', function (response) {
-//        if (response && !response.error) {
-//            console.log(JSON.stringify(response.data));
-//        }
-//    });
-
-//    FB.api('/me/invitable_friends', function (response) {
-//        if (response && !response.error) {
-//            console.log(JSON.stringify(response));
-//        }
-//    });
-//}
-
-// novo login
-
 function loadFb() {
     window.fbAsyncInit = function () {
         FB.init({
@@ -83,14 +56,24 @@ function getProfileFb() {
                     //}
 
                     document.getElementById('user-cover').src = profile.cover.source;
-                    document.getElementById('id').innerText = profile.id;
-                    document.getElementById('name').innerText = profile.name;
+                    document.getElementById('user-name').innerText = profile.name;
                     console.log(JSON.stringify(profile));
                 }
                 else {
                     console.log(profile.error);
                 }
             });
+
+            FB.api('/me/picture?width=160&height=160', 'GET', {}, function (picture) {
+                if (picture && !picture.error) {
+                    document.getElementById('user-picture').src = picture.data.url;
+                    console.log(JSON.stringify(picture));
+                }
+                else {
+                    console.log(picture.error);
+                }
+            });
+            
         }
     });
 }

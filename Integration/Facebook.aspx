@@ -14,19 +14,17 @@
     <div id="facebookMain">
         <div id="fb-title">
             <img id="fb-icon" src="images/facebook_icon.png"/>
-            <%--<div id="fb-link">--%>
             <a href="#">Perfil</a>
             <a href="#">Amigos</a>
             <a href="#">Albúns</a>
-            <%--</div>--%>
         </div>
-        <br />
         <div id="fb-cover">
-            <img id="user-cover" src="#" height=""/>
+            <img id="user-cover" src="#" />
         </div>
-        <br />
-        <span id="id"></span>
-        <br />
-        <span id="name"></span>
+        <div id="fb-picture">
+            <img id="user-picture" src="#" />
+        </div>
+        <span id="user-name"></span>
+        
     </div>
 </asp:Content>
